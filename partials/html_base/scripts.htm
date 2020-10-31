@@ -1,0 +1,112 @@
+[viewBag]
+==
+<script src="https://code.jquery.com/jquery.min.js"></script>
+
+<script src="{{ ['assets/lib/validate/script.js','assets/lib/validate/jquery.maskedinput.min.js','assets/lib/fancybox/jquery.fancybox.min.js','assets/lib/bootstrap/js/bootstrap-formhelpers.js','assets/lib/bootstrap/js/bootstrap-formhelpers-phone.js','assets/lib/bootstrap/js/bootstrap.min.js','assets/lib/silk/slick.js','assets/js/device.js','assets/js/common.js']|theme }}"></script>
+
+{% if this.theme.load_octobercms_framework %}
+{% framework extras %}
+{% endif %}
+
+<script type="text/javascript">
+	$( window ).load(function() {
+		
+		$fix_block_height_1 = $("#menu_top").height();
+		$(window).scroll(function () {
+			if ($(window).scrollTop()-115 > $fix_block_height_1) $('#menu_top').addClass("fix-navbar-top");
+			else $('#menu_top').removeClass("fix-navbar-top");
+		});
+		
+		if(device.desktop() || (device.tablet() && device.landscape()))
+		{
+			$fix_block_height = $("div.filter-b").height(); // высота блока фильтра
+			$stop_fix_block = $('div.tovar').outerHeight(true); // высота блока товаров
+			$stop_fix_block_out = $('.tovar .col-xs-12 div.thumbnail').outerHeight(true); //высота карточки товара
+			$(window).scroll(function () {
+				if ($(window).scrollTop() + 150 > $fix_block_height & $(window).scrollTop() + 150 < $stop_fix_block) {
+					$('.filter-b').addClass("fix-aside-filter");
+					$('.filter-b').css("top", "");
+				} else {
+					$('.filter-b').removeClass("fix-aside-filter");
+					if ($(window).scrollTop() < $fix_block_height)
+						$('.filter-b').css("top", "");
+					else{
+						if(device.desktop()){
+								$('.filter-b').css("top", $stop_fix_block - $stop_fix_block_out+15);
+						}
+						else $('.filter-b').css("top", $stop_fix_block - $stop_fix_block_out-20);
+					}
+				}
+			});
+		}
+	});
+</script>
+
+{% if this.page.title == 'Страница карточки товара' %}
+
+<script type="text/javascript">
+
+	$(document).on('ready', function() {
+			$(".regular").slick({
+				dots: true,
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true
+			});
+			
+	});
+</script>
+
+{% else %}
+<script type="text/javascript">
+	$(document).on('ready', function() {
+		
+		$('[data-fancybox]').fancybox({
+			image : {
+				protect: true
+			}
+		});
+	
+		if(device.tablet() || device.mobile())
+		{
+			$(".regular").slick({
+				dots: true,
+				infinite: true,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				arrows: true
+			});
+		}
+		if(device.desktop())
+		{
+			$(".regular").slick({
+				dots: true,
+				infinite: true,
+				slidesToShow: 4,
+				slidesToScroll: 4,
+				arrows: true
+			});
+		}
+		$('.one-time').slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			adaptiveHeight: true,
+			autoplay: true,
+			autoplaySpeed: 4000
+		});
+	});
+</script>
+{% endif %}
+
+<link href="{{['assets/lib/fancybox/jquery.fancybox.min.css','assets/lib/bootstrap/css/bootstrap.min.css','assets/lib/bootstrap/css/bootstrap-theme.min.css','assets/css/font.css','assets/css/style.css','assets/css/media-main.css','assets/lib/silk/slick.css','assets/lib/silk/slick-theme.css']|theme }}" rel="stylesheet">
+	
+	{% if this.theme.load_fontawesome %}
+		<link href="{{['assets/lib/fontawesome/css/font-awesome.min.css']|theme}}" rel="stylesheet">
+	{% endif %}
+	
+	{% if this.theme.load_google_fonts %}
+		<link href="https://fonts.googleapis.com/css?family={{ this.theme.google_font_family }}" rel="stylesheet">
+	{% endif %}

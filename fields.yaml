@@ -1,0 +1,105 @@
+tabs:
+  fields:
+
+    ####################################################
+    # Tab: Инфо
+    ####################################################
+
+    website_name:
+      tab: Инфо
+      label: Название сайта
+      type: text
+      default: Воздух в доме
+
+    website_author:
+      tab: Инфо
+      label: Автор
+      type: text
+      default: Grand Media Service
+      
+    website_creator:
+      tab: Инфо
+      label: Front-end & Backend Dev
+      type: text
+      default: UmiQv
+      disable: true
+
+    website_url:
+      tab: Инфо
+      label: URL
+      type: text
+      default: "http://grandms.ru/"
+
+    description:
+      tab: Инфо
+      label: Описание
+      type: textarea
+      default: "Шаблон сайта для компании Возуд в доме"
+
+    keywords:
+      tab: Инфо
+      label: Ключи
+      type: taglist
+      separator: comma
+      default: vozduh,vozduh v dome,vozduh v dom,octobercms,october,gms,grand media service,grandms.ru
+      options:
+        - vozduh
+        - vozduh v dom
+        - grand media service
+        - vozduh v dome
+        - october
+        - gms
+        - grandms.ru
+
+    ####################################################
+    # Tab: Дополнительно
+    ####################################################
+
+    load_google_fonts:
+      tab: Дополнительно
+      label: Стили Google Font
+      type: switch
+      default: true
+
+    google_font_family:
+      tab: Дополнительно
+      label: Google Font Family
+      type: text
+      comment: Добавляйте стили через вертикальный слэш '|'
+      default: "Roboto+Slab:300,400,700|Raleway:300,300i,400,400i,700,700i"
+      trigger:
+        action: show
+        field: load_google_fonts
+        condition: checked
+
+    load_fontawesome:
+      tab: Дополнительно
+      label: FontAwesome Icons Font
+      type: switch
+      default: true
+
+    load_jQuery:
+      tab: Дополнительно
+      label: jQuery
+      type: switch
+      default: true
+
+    jQuery_version:
+      tab: Дополнительно
+      label: Версия jQuery
+      type: dropdown
+      default: 2.2.4
+      options:
+        3.1.0: 3.1.0
+        2.2.4: 2.2.4
+        1.12.4: 1.12.4
+      trigger:
+        action: show
+        field: load_jQuery
+        condition: checked
+
+    load_octobercms_framework:
+      tab: Дополнительно
+      label: OctoberCMS Front-end Javascript Framework
+      type: switch
+      default: false

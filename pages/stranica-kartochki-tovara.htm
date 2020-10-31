@@ -1,0 +1,17 @@
+title = "Страница карточки товара"
+url = "/catalog/:category_slug/:slug"
+layout = "vozduhvdom"
+is_hidden = 0
+
+[Catalogsone]
+slug = "{{ :slug }}"
+
+[Catalogs]
+slug = "{{ :slug }}"
+catId = 1
+
+[Category]
+slug = "{{ :slug }}"
+==
+{% component 'Catalogsone' %}
+{% partial "site/formajax" %}

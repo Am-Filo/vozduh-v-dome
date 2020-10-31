@@ -1,0 +1,108 @@
+[viewBag]
+
+[Catalogs]
+slug = "{{ :slug }}"
+catId = 1
+
+[staticMenu]
+code = "glavnoe-menyu"
+==
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 header">
+			<div class="col-md-4 col-sm-12 col-xs-12 h-logo">
+				<a href="{{ 'home'|page }}">
+					<img src="/themes/vozduhvdome/assets/images/logo.png" width="93%" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12 mail-info">
+				<h4><span>info@vozduhvdome.su</span></h4>
+				<h4><span><a target="_blank" href="https://vk.com/vozduhvdome"><i class="fa fa-vk" aria-hidden="true"></i> вконтакте</a></span></h4>
+			</div>
+			<div class="col-md-4 col-sm-8 col-xs-12 telephone-h">
+				Санкт-Петербург 8 (812) 309-95-35
+				<br>
+			     
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="col-md-12" id="menu_top">
+			<nav  id="menu" class="sticky-content navbar top_nav" style="margin: auto;border:none;">
+				<div id="nav_menu" class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+							<span class="sr-only">Toggle navigation</span>
+							<i class="fa fa-1x fa-bars" aria-hidden="true"></i>
+						</button>
+						<a data-toggle="modal" href="#Order1" class="navbar-brand" href="#">
+							<i class="fa fa-phone fa-1x" aria-hidden="true"></i>
+							<span class="t-phone" style="	font-family: Arial;">Заказать звонок</span>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-main">
+						<ul class="nav t-menu navbar-nav navbar-right">
+							{% if staticMenu.menuItems %}
+								{% partial staticMenu ~ "::items" items=staticMenu.menuItems %}
+							{% endif %}
+							<li><a data-request="onRefreshTime" data-request-update="'modal/modal_basket': '#mod'" class="shop-card" data-toggle="modal" href="#BasketM"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"><span id="basket">{% partial "bskt" %}</span></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+
+	<div class="modal fade bs-example-modal-lg" id="BasketM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Корзина</h4>
+      </div>
+      <div class="modal-body">
+      	<div id="mod">
+				{% partial 'modal/modal_basket' %}
+				</div>
+				</div>
+      <div class="modal-footer">
+        <a href="{{ 'korzina'|page }}" class="btn btn-primary">Перейти к оформлению</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<div class="modal fade bs-example-modal-lg" id="Order1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel" style="text-align:center;">Закажите обратный звонок, и наш специалист свяжется с Вами в ближайшее время</h4>
+      </div>
+      <div class="modal-body">
+      	<div id="order">
+				{% partial 'modal/form_order' %}
+				</div>
+				</div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(54426118, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/54426118" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->

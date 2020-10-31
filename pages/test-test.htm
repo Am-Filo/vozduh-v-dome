@@ -1,0 +1,28 @@
+title = "test-test"
+url = "/test-test"
+is_hidden = 0
+==
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+<script>
+		var getUrlParameter = function getUrlParameter(sParam) {
+			var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+			sURLVariables = sPageURL.split('&'),
+			sParameterName,
+			i;
+
+			for (i = 0; i < sURLVariables.length; i++) {
+				sParameterName = sURLVariables[i].split('=');
+
+				if (sParameterName[0] === sParam) {
+					return sParameterName[1] === undefined ? true : sParameterName[1];
+				}
+			}
+		};
+		
+		if(getUrlParameter('utm_source') != undefined && Cookies.get('utm_source_from') == undefined)	Cookies.set('utm_source_from', utm_source, { expires: 7 });
+		
+		alert(getUrlParameter('utm_source'));
+		alert(Cookies.get('utm_source_from'));
+
+	</script>

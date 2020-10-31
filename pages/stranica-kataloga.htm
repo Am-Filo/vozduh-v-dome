@@ -1,0 +1,14 @@
+title = "Страница каталога"
+url = "/catalog/:category_slug"
+layout = "vozduhvdom"
+is_hidden = 0
+
+[Category]
+slug = "{{ :category_slug }}"
+
+[Catalogs]
+slug = "{{ :slug }}"
+catId = 5
+==
+{% component 'Category' %}
+{% partial "site/formajax" %}

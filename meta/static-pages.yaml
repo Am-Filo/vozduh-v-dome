@@ -1,0 +1,14 @@
+static-pages:
+    uslugi:
+        almaznoe-burenie: {  }
+        montazh-klapana: {  }
+        montazh-provetrivatelya: {  }
+        dostavka-i-oplata: {  }
+        montazh-rekuperatora: {  }
+        montazh: {  }
+    main:
+        informaciya:
+            prinuditelnaya-ventilyaciya: {  }
+            ventilyaciya-v-chastnom-dome: {  }
+            ventilyaciya-v-derevyannom-dome: {  }
+        politika-konfidencialnosti-2: {  }

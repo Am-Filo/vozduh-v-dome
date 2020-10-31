@@ -1,0 +1,32 @@
+title = "Корзина"
+url = "/basket"
+layout = "vozduhvdom"
+is_hidden = 0
+
+[Catalogs]
+slug = "{{ :slug }}"
+catId = 1
+==
+<div class="col-md-12">
+	<h1>Корзина товаров</h1>
+</div>
+{% partial __SELF__ ~ '::basket' %}
+	<div class="col-md-offset-10 col-sm-offset-9 col-sm-3 col-md-2">
+		<a data-toggle="modal" href="#Order_checku" type="submit" class="form-g-bt g-btn btn-block">Оформить</a>
+	</div>
+
+	<div class="modal fade bs-example-modal-lg" id="Order_checku" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Корзина</h4>
+      </div>
+      <div class="modal-body">
+      	<div id="checku">
+				{% partial 'modal/order_chekout' %}
+				</div>
+			</div>
+    </div>
+  </div>
+</div>

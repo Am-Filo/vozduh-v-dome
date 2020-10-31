@@ -1,0 +1,620 @@
+body{
+	background-color: #edeef0;
+}
+*{
+	font-family: 'HelveticaLight';
+ 	/*font-family:Arial, Tahoma, sans-serif;*/
+}
+.thumbnail{
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+}
+
+.thumbnail h3{
+   height:60px;
+   font-size:21px;
+}
+
+.header{
+	padding: 30px 0px 30px 0px;
+	text-align: center;
+}
+.telephone-h{
+	text-align: right;
+	font-size: 18px;
+}
+.mail-info{
+	padding: 10px 0 25px 0;
+}
+.mail-info > h4 > span{
+	color: #ff5200;
+}
+.navbar{
+	-webkit-box-shadow: 0 0px 15px rgba(0,0,0,0.3);
+	box-shadow: 0 0px 15px rgba(0,0,0,0.3);
+	background-color: #ff5200 !important;
+}
+.navbar-brand{
+	padding: 10px 15px !important;
+	height: 40px !important;
+	border: 1.5px solid white;
+	border-radius: 4px;
+	margin-left: 5px !important;
+	margin-top: 6px;
+	color: white;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.navbar-brand:hover{
+	color: #ff5200;
+	background-color: #fff;
+}
+.navbar-brand:focus{
+	color: #ff5200;
+	background-color: #fff;
+}
+.t-menu{
+	margin-right: 0px;
+}
+.navbar-toggle{
+	background-color: white;
+	width: 45px;
+}
+.top-button-order{
+	border: 1.5px solid white;
+	padding: 10px 50px 10px 50px;
+	border-radius: 4px;
+	margin-top: 5px;
+	margin-right: 10px;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	outline: none;
+}
+.fa-shopping-cart > span {
+	background-color: white;
+	border-radius: 4px;
+	color: #ff5200;	
+	padding: 5px 10px 5px 5px;
+	margin-left: 5px;
+}
+.basket{
+	background-color: white;
+	border-radius: 4px;
+	color: #ff5200;	
+	padding: 5px 10px 5px 5px;
+	margin-left: 5px;
+}
+.card-main-5 > h3 {
+	text-align: center;
+	font-size: 22px;
+}
+.fa-shopping-cart > span:hover {
+	background-color: #ff5200;
+	color: white;
+}
+
+.shop-card{
+	padding: 19px 10px 19px 10px !important;
+	outline: none;
+}
+.t-menu > li >a.shop-card:hover{
+	background-color: #ff5200 !important;
+	color: white;
+	outline: none;
+}
+.t-menu > li >a{
+	color: white;
+	text-transform: uppercase;
+	padding: 16px 10px 16px 10px;
+	outline: none;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.d-menu{
+	background-color: #ff5200 !important;
+}
+.d-menu > li >a{
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+}
+.d-menu > li >a.shop-card:hover{
+	color: #ff5200;
+}
+.breadcrumb{
+	background: none;
+	text-transform: uppercase;
+}
+.breadcrumb>.active {
+	color: #ff5200;
+}
+ol.breadcrumb>li>a:hover {
+	color: #ff5200;
+}
+ol.breadcrumb>li>a {
+	color: black;
+	text-decoration: none;
+}
+.breadcrumb>li+li:before {
+	color: #ff5200;
+}
+.t-menu > li >a:hover{
+	color: white;
+	background-color: white;
+	color: #ff5200;
+}
+.t-menu > li >a:focus{
+	color: white;
+	background-color: white;
+	color: #ff5200;
+}
+.t-menu > li >a:active
+{
+	color: white;
+	background-color: white;
+	color: #ff5200;
+}
+.h-logo{
+	padding: 15px 0px 15px 0px;
+}
+.sliderr{
+	height: 300px;
+	background-image: url(../assets/images/slider/1.jpg);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0px 15px rgba(0,0,0,0.3);
+	box-shadow: 0 0px 15px rgba(0,0,0,0.3);
+}
+.slider-ct{
+	margin-top: 3%;
+}
+.card-main{
+	margin-top: 3%;
+}
+.card-main-10{
+	margin-top: 5%;
+}
+.card-main-10 > h3{
+	text-align: center;
+}
+.about-card{
+	border-radius: 5px;
+	padding-bottom: 2%;
+}
+.caption > p {
+	text-transform: uppercase;
+}
+#o-ad{
+	box-shadow:none !important;
+}
+.our-ad{
+	border-radius: 5px;
+	padding-bottom: 5%;
+	-webkit-box-shadow: 0 0px 15px rgba(0,0,0,0.3);
+	box-shadow: 0 0px 15px rgba(0,0,0,0.3);
+}
+.our-ad > .text-about{
+	color: #333;
+	padding-bottom: 3%;
+}
+.our-ad > h3{
+	color: #333;
+	text-align: center;
+	padding: 20px;
+	text-transform: uppercase;
+}
+.bgc-o{
+	background-color: #ff5200;
+}
+.bgc-w{
+	background-color: white;
+	text-align: center;
+}
+.thumbnail{
+	text-align: center;
+	border: none;
+}
+.about-card > .text-about{
+	color: white;
+	padding-bottom: 3%;
+}
+.image-about > img{
+	width: 100%;
+}
+.about-card > h3{
+	color: white;
+	text-align: center;
+}
+.g-btn{
+	border: 1.5px solid orange;
+	padding: 15px;
+	border-radius: 5px;
+	color: orange;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+}
+.g-btn:hover{
+	color: White;
+	background-color: orange;
+	text-decoration: none;
+}
+#g-btn2{
+    border: 1.5px solid white;
+    color: white;
+}
+#common_button{
+    width:66%;
+}
+#prit_button{
+    width:100%;
+    margin-right:15%;
+}
+#vit_button{
+    width:100%;
+    margin-left:15%;
+}
+.form-g-bt{
+	background: #ff5200;
+	color: white;
+}
+.form-g-inp{
+	border: 1.5px solid #ff5200;
+	padding: 15px;
+	border-radius: 5px;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 5px;
+	outline: none;
+}
+.form-g-inp:hover{
+	text-decoration: none;
+}
+.about-site{
+	text-align: center;
+}
+.about-site > h3{
+	text-transform: uppercase;
+	color: orange;
+}
+.about-site > h4{
+	padding: 20px 0 20px 0;
+	line-height: 1.7em;
+}
+.with-us-p{
+	padding-top: 5%;
+	font-size: 20px;
+}
+.with-us-p > span{
+	color: #ff5200;
+}
+.footer > hr{
+	border-top: 1px solid #80858e;
+	padding-bottom: 50px;
+}
+.copyr{
+	text-align: center;
+}
+.fhminu{
+	margin: 0;
+	padding-bottom: 15px;
+}
+.logo-adress{
+	padding: 0;
+}
+.logo-adress > p{
+	padding-top: 15px;
+	line-height: 2em;
+	font-size: 13px;
+}
+.list-unstyled{
+	line-height: 1.7em;
+}
+.slider {
+	width: 100%;
+	margin: 25px auto;
+}
+
+.sl__slide{
+    position: relative;
+}
+
+.sl__text{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    width: 100%;
+}
+.slick-slide {
+	margin: 0px 20px;
+	outline: none;
+}
+.slick-initialized .slick-slide{
+	margin: 0px;
+}
+.slick-slide img {
+	width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: #ff5200 !important;
+}
+
+.slick-track{
+	height: 40%;
+}
+
+/*страница товара*/
+
+.info-cs{
+	text-align: center;
+/*	text-transform: uppercase;*/
+}
+.info-cs > .h-inf > h1{
+	font-weight: 600;
+	color: #ff5200;
+}
+
+.add-btn{
+	border: 1.5px solid #ff5200;
+	padding: 15px;
+	border-radius: 5px;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 10px;
+	outline: none;
+	background: none;
+}
+.add-btn2{
+	border: 1.5px solid #ff5200;
+	padding: 15px;
+	border-radius: 5px;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 5px;
+	outline: none;
+	background: none;
+}
+.add-btn2:hover{
+    background:#ff5200;
+    color:#fff;
+}
+.cont-m-info{
+	margin-top: 5%;
+}
+
+.table > thead {
+	background: white;
+	border-radius: 15px;
+}
+.table > thead > tr > th {
+	text-align: center;
+}
+.info-slider{
+	margin: auto ;
+}
+.slider-add-card{
+	padding: 0;
+}
+.add-card-c{
+	margin-bottom: 0;
+}
+.info-about-text{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-family:Arial, Tahoma, sans-serif;
+}
+.info-about-text p, li, td, b, strong{
+ 	font-family:Arial, Tahoma, sans-serif;
+ 	font-size: 16px;
+    
+}
+
+.new-t{
+	background-color: red;
+	font-weight: 600;
+	color: white;
+}
+.new-s{
+	background-color: #ff5200;
+	font-weight: 600;
+	color: white;
+}
+
+/*каталог*/
+.kt > h1{
+	font-size: 3em;
+}
+.info-ck{
+	text-transform: uppercase;
+}
+.info-ck > .col-md-12 > h1 {
+	background-color: #ff5200;
+	color: white;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+/*Модаль*/
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.menu-l{
+	font-size: 12px;
+}
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+a.link-button{
+	border: none;
+    padding: 2px 30px;
+    font-size: 15px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    background: #ff5200;
+    color: white;
+}
+
+a.link-button:hover{
+	background: orange;
+	color: white;
+}
+.link-card-g{
+	text-align: left;
+	bottom: 10px;
+	text-decoration: underline;
+	font-weight: 100;
+	padding: 0;
+	margin-top:10px;
+}
+#menu.default {
+    /* width:920px; */
+}
+.fixed {
+    top: 0px;
+    position: fixed;
+    width: 70%;
+    padding: 0;
+    left: 15%;
+    z-index: 999;
+    margin: 0;
+}
+
+/*фиксированное плавающее меню*/
+#top_nav{
+	bottom:0;
+	position: fixed;
+	z-index: 1000;
+	width:100%;
+	height:100px;
+}
+p.smart_vent{
+    padding-top:3%;    
+}
+p.brizer{
+    padding-top:5%; 
+}
+.p_solution{
+    padding-top:5%;
+    font-size:14px;
+}
+.card-inp-pr{
+     padding-left:5px;   
+}
+.card-inp-pl{
+     padding-right: 5px;   
+}
+
+.char-tb{
+	overflow-x: auto;
+}
+div.cat_content p{
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 16px;
+    text-transform:none;
+    text-align:justify;
+}
+a.refr-filter > i.fa{
+	color: #ff8300;
+	font-size: smaller;
+	padding-left: 10px;
+}
+
+a.refr-filter > i.fa:hover{
+	color: #ff5200;
+}
+.mail-info > h4 > span >a {
+    color: #ff5200;
+}
+
+/* 1 ЧЕКБОКС */
+
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative;
+    width: 45px;
+    margin-left: 5px;  
+}
+
+.material-switch > label::before {
+    background: rgb(255, 66, 66);
+    /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); */
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position: absolute;
+    /* opacity: 0.3; */
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); */
+    content: '';
+    height: 16px;
+    left: -4px;
+    margin-left: 4px;
+    margin-top: -4px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 16px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}

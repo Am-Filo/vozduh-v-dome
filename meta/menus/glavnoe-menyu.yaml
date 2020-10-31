@@ -1,0 +1,248 @@
+name: 'Главное меню'
+items:
+    -
+        title: Главная
+        nesting: ''
+        type: url
+        url: /
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Каталог
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: ''
+        reference: katalog
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'Приточно-вытяжная вентиляция'
+                nesting: ''
+                type: url
+                url: /catalog/pritochno-vytyazhnaya-ventilyaciya
+                code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Приточная вентиляция'
+                nesting: ''
+                type: url
+                url: /catalog/pritochnaya-ventilyaciya
+                code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Вытяжная вентиляция'
+                nesting: ''
+                type: url
+                url: /catalog/vytyazhnaya-ventilyaciya
+                code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Отопление
+                nesting: ''
+                type: url
+                url: /catalog/otoplenie
+                code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Аксессуары
+                nesting: ''
+                type: url
+                url: /catalog/aksessuary
+                code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Услуги
+        nesting: '1'
+        type: static-page
+        url: ''
+        code: ''
+        reference: uslugi
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'Монтаж рекуператора'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: montazh-rekuperatora
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Монтаж проветривателя'
+                nesting: '0'
+                type: static-page
+                code: ''
+                reference: montazh-provetrivatelya
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Монтаж клапана'
+                nesting: '0'
+                type: static-page
+                code: ''
+                reference: montazh-klapana
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Доставка и оплата'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: dostavka-i-oplata
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: 'Готовые решения'
+        nesting: ''
+        type: url
+        url: /catalog/gotovye-resheniya
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Помощь в выборе'
+        nesting: '1'
+        type: static-page
+        url: ''
+        code: ''
+        reference: informaciya
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'Как выбрать вентиляцию'
+                nesting: ''
+                type: url
+                url: /informaciya
+                code: ''
+                reference: ''
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Вентиляция в частном доме'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: ventilyaciya-v-chastnom-dome
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Вентиляция в деревянном доме'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: ventilyaciya-v-derevyannom-dome
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Принудительная вентиляция'
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: prinuditelnaya-ventilyaciya
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Контакты
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: ''
+        reference: kontakty
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

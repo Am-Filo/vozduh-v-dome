@@ -1,0 +1,7 @@
+name: 'Воздух в доме GMS'
+description: 'Шаблон сайта - Воздух в доме'
+author: 'Grand Media Service'
+creator: 'UmiQv'
+homepage: 'http://grandms.ru/'
+code: vozduh_v_dome_gms
+form: fields.yaml

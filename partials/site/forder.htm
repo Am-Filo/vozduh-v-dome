@@ -1,0 +1,31 @@
+==
+{% if success_form_ct %}
+<div class="col-sm-offset-1 col-sm-10 slider-add-card">
+<h3>Спасибо за Вашу заявку.<br>Наш специалист свяжется с Вами в ближайшее время.</h3>
+{% else %}
+{{ form_ajax('Catalogsone::onSendMail', {
+		class: 'form-horizontal',
+		update: { 'site/forder': '#forder' },
+	}) }}
+	{% set slug_category =  Catalogsone.GetCategoryes %}
+	<div class="col-md-12 col-sm-10 slider-add-card">
+		<div class="form-group add-card-c">
+			<div class="col-md-6 col-sm-12 col-xs-12 card-inp-pl">
+				<input type="name" name="name" required class="add-btn btn-block" id="inputEmail3" placeholder="Ваше имя">
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12 card-inp-pr">
+				<!-- <input type="tel" name="telephone" class="input-medium bfh-phone add-btn btn-block" required pattern=".{16,}" placeholder="8 (___) ___-__-__" data-format="d (ddd) ddd-dddd"> -->
+				<!-- <input type="tel" name="telephone" placeholder="+7 (___) ___-__-__" id="user_phone" class="form-g-inp btn-block user-phone"  title="Формат: +7 (096) 999 99 99"/> -->
+				<input type="tel" name="telephone" required pattern=".{16,}" placeholder="+_ (___) ___-__-__" id="user_phone" class="add-btn btn-block user-phone" title="Формат: +7 (096) 999 99 99"/>
+				<input type="name" class="hidden" name="id" value="{{catcalone.id}}"><input class="hidden" type="name" name="title" value="{{catcalone.title}}"><input class="hidden" type="name" name="url" value="{{ 'home'|page }}/catalog/{{slug_category.slug}}/{{catcalone.slug}}">
+			</div>
+		</div>
+		<div style="margin-left:15px;text-align:left;" class="form-group">
+				<input required checked name="someSwitchOption001" type="checkbox"/>
+				<label for="someSwitchOptionSuccess" class="label-success"></label>
+				Я принимаю <a class="fancybox" data-fancybox="" data-type="iframe" data-src="/politika-konfidencialnosti" style="text-decoration: none;cursor: pointer;">условия передачи данных</a>
+			</div>
+		<button type="submit" class="form-g-bt g-btn btn-block btn_submit">Заказать</button>
+	</div>
+{{ form_close() }}
+{% endif %}

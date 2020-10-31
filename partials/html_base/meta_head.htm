@@ -1,0 +1,43 @@
+[viewBag]
+==
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta name="yandex-verification" content="a6501e56d021b6e5" />
+	<meta name="yandex-verification" content="33ad5ca472d4db3d" />
+	<meta name="google-site-verification" content="lzPlZjGvULTvRg_IV_9fVKWwur3TixlEnGAqcfJoAu8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	{% if this.page.title != 'Страница карточки товара' and this.page.title != "Страница каталога" %}
+		<meta name="description" content="{{ this.page.meta_description|default(this.theme.description) }}">
+		<meta name="keywords" content="{{ this.theme.keywords }}">
+		<title>{{ this.page.meta_title|default(this.page.title) }}</title>
+	{% endif %}
+	{% if this.page.title == 'Страница карточки товара' %}
+		{% if catcalone.enable_seo %}
+			<meta name="title" content="{{ catcalone.title_seo }}">
+			<meta name="description" content="{{ catcalone.description_seo }}">
+			{% if catcalone.title_seo %}
+				<title>{{ catcalone.title_seo }}</title>
+				<meta name="title" content="{{ catcalone.title_seo }}">
+			{% else %}
+				<title>{{ catcalone.title }}</title>
+				<meta name="title" content="{{ catcalone.title }}">
+			{% endif %}
+		{% endif %}
+	{% endif %}
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<meta name="author" content="{{ this.theme.website_author }} | {{ this.theme.website_creator }}">
+	<link rel="icon" href="http://vozduhvdome.su/themes/vozduhvdome/assets/images/favicon.ico">
+	<!-- Cleversite chat button -->
+	<script type='text/javascript'>
+		(function() { 
+			var s = document['createElement']('script');
+			s.type = 'text/javascript'; 
+			s.async = true; 
+			s.charset = 'utf-8';	
+			s.src = '//cleversite.ru/cleversite/widget_new.php?supercode=1&referer_main='+encodeURIComponent(document.referrer)+'&clid=39164ZyhhB&siteNew=52211'; 
+			var ss = document['getElementsByTagName']('script')[0]; 
+			if(ss) {ss['parentNode']['insertBefore'](s, ss);} else {document['documentElement']['firstChild']['appendChild'](s);};
+		})(); 
+	</script>
+	
+<!-- / End of Cleversite chat button -->

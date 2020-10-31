@@ -1,0 +1,139 @@
+@font-face {
+	font-family: 'gms-icon-main';
+	src: url('../font/GmsIcons/vvd-ico-webfont.woff2') format('woff2'),
+	url('../font/GmsIcons/vvd-ico-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gms-icon-cat';
+	src: url('../font/GmsIcons/vvd-ico-cat.woff2') format('woff2'),
+	url('../font/GmsIcons/vvd-ico-cat.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaThin';
+	src: url('../font/HalveticaNur/HelveticaNeueCyr-Thin.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaMedium';
+	src: url('../font/HalveticaNur/HelveticaNeueCyr-Medium.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaBlack';
+	src: url('../font/HalveticaNur/HelveticaNeueCyr-Black.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaBold';
+	src: url('../font/HalveticaNur/HelveticaNeueCyr-Bold.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaLight';
+	src: url('../font/HalveticaNur/HelveticaNeueCyr-Light.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaRoman';
+	src: url('../font/HalveticaNur/HelveticaNeueCyr-Roman.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaUltralight';
+	src: url('../font/HalveticaNur/HelveticaNeueCyr-UltraLight_0.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gms-icon-main-adv';
+	src: url('../font/GmsIcons/font-work-webfont.woff2') format('woff2'),
+	url('../font/GmsIcons/font-work-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+.gms-i-cat {
+	font-family: 'gms-icon-cat';
+	font-style: normal;
+	display: inline-block;
+	font-size: 40px;
+	text-rendering: auto;
+	color: #fb5100;
+	margin-top:10px;
+}
+
+.gms-i-cat.g-c-one::before{
+	content: 'a';
+}
+.gms-i-cat.g-c-two::before{
+	content: 'b';
+}
+.gms-i-cat.g-c-three::before{
+	content: 'd';
+}
+.gms-i-cat.g-c-four::before{
+	content: 'c';
+}
+
+
+.gms-i {
+	font-family: 'gms-icon-main';
+	font-style: normal;
+	display: inline-block;
+	font-size: 150px;
+	text-rendering: auto;
+}
+
+.gms-i.g-one::before{
+	content: 'a';
+}
+.gms-i.g-two::before{
+	content: 'b';
+}
+.gms-i.g-three::before{
+	content: 'd';
+}
+.gms-i.g-four::before{
+	content: 'c';
+}
+
+.gms-i-a {
+	font-family: 'gms-icon-main-adv';
+	font-style: normal;
+	display: inline-block;
+	font-size: 100px;
+	text-rendering: auto;
+	border-right: 1px solid black;
+	padding-right: 12.4px;
+}
+i.gms-i-a::after {
+	content: '.';
+	position: absolute;
+	top: -45px;
+}
+.gms-i-a.g-tel::before{
+	content: 'a';
+}
+.gms-i-a.g-car::before{
+	content: 'b';
+}
+.gms-i.g-drill::before{
+	content: 'c';
+}
+.gms-i-a.g-pay::before{
+	content: 'd';
+}
+.gms-i-a.g-ach::before{
+	content: 'e';
+}

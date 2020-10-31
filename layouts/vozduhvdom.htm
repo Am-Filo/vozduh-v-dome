@@ -1,0 +1,53 @@
+[Category]
+slug = "{{ :slug }}"
+
+[staticPage]
+useContent = 1
+default = 0
+
+[staticMenu]
+
+[staticBreadcrumbs]
+
+[Catalogs]
+slug = "{{ :slug }}"
+catId = 1
+==
+<?php
+function onRefreshTime()
+{
+    return [
+        '#mod' => $this->renderPartial('modal/modal_basket')
+    ];
+}
+?>
+==
+<html>
+	<head>
+		{% partial "html_base/meta_head" %}
+		{% partial "seo/scripts-head" %}
+		{% styles %}
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WMCZ5L3');</script>
+<!-- End Google Tag Manager -->
+	</head>
+	<body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMCZ5L3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<header>
+			{% partial "all_pages/header" %}
+		</header>
+		<div class="container">
+			{% page %}
+			{% partial "all_pages/footer" %}
+		</div>
+		{% partial "html_base/scripts" %}
+		{% partial "seo/scripts-footer" %}
+	</body>
+</html>
